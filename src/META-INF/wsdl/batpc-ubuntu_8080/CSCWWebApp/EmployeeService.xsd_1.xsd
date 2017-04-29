@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://cscwwebapp.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://cscwwebapp.com/">
+
+<xs:element name="addEmployee" type="tns:addEmployee"/>
+
+<xs:element name="addEmployeeResponse" type="tns:addEmployeeResponse"/>
+
+<xs:element name="editEmployee" type="tns:editEmployee"/>
+
+<xs:element name="editEmployeeResponse" type="tns:editEmployeeResponse"/>
+
+<xs:element name="getCurrentUser" type="tns:getCurrentUser"/>
+
+<xs:element name="getCurrentUserResponse" type="tns:getCurrentUserResponse"/>
+
+<xs:element name="getSample" type="tns:getSample"/>
+
+<xs:element name="getSampleResponse" type="tns:getSampleResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="isLoginStatus" type="tns:isLoginStatus"/>
+
+<xs:element name="isLoginStatusResponse" type="tns:isLoginStatusResponse"/>
+
+<xs:element name="removeEmployee" type="tns:removeEmployee"/>
+
+<xs:element name="removeEmployeeResponse" type="tns:removeEmployeeResponse"/>
+
+<xs:element name="setLoginStatus" type="tns:setLoginStatus"/>
+
+<xs:element name="setLoginStatusResponse" type="tns:setLoginStatusResponse"/>
+
+<xs:element name="validateLogin" type="tns:validateLogin"/>
+
+<xs:element name="validateLoginResponse" type="tns:validateLoginResponse"/>
+
+<xs:element name="viewEmployees" type="tns:viewEmployees"/>
+
+<xs:element name="viewEmployeesResponse" type="tns:viewEmployeesResponse"/>
+
+<xs:complexType name="isLoginStatus">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="isLoginStatusResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSample">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getSampleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateLogin">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateLoginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addEmployee">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addEmployeeResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="setLoginStatus">
+<xs:sequence>
+<xs:element name="arg0" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setLoginStatusResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewEmployees">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="viewEmployeesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:employee" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="employee">
+<xs:sequence>
+<xs:element name="empID" type="xs:int"/>
+<xs:element name="empName" type="xs:string" minOccurs="0"/>
+<xs:element name="empPosition" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeEmployee">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeEmployeeResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCurrentUser">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCurrentUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editEmployee">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editEmployeeResponse">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>

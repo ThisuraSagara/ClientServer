@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://batpc-ubuntu:8080/SampleWebApp/WebService1?wsdl" uri="wsdl/batpc-ubuntu_8080/SampleWebApp/WebService1.wsdl"/>
+    <system systemId="http://batpc-ubuntu:8080/SampleWebApp/WebService1?xsd=1" uri="wsdl/batpc-ubuntu_8080/SampleWebApp/WebService1.xsd_1.xsd"/>
+    <system systemId="http://batpc-ubuntu:8080/CSCWWebApp/EmployeeService?wsdl" uri="wsdl/batpc-ubuntu_8080/CSCWWebApp/EmployeeService.wsdl"/>
+    <system systemId="http://batpc-ubuntu:8080/CSCWWebApp/EmployeeService?xsd=1" uri="wsdl/batpc-ubuntu_8080/CSCWWebApp/EmployeeService.xsd_1.xsd"/>
+    <system systemId="http://batpc-ubuntu:8080/CSCWWebAppCustomer/CustomerService?wsdl" uri="wsdl/batpc-ubuntu_8080/CSCWWebAppCustomer/CustomerService.wsdl"/>
+    <system systemId="http://batpc-ubuntu:8080/CSCWWebAppCustomer/CustomerService?xsd=1" uri="wsdl/batpc-ubuntu_8080/CSCWWebAppCustomer/CustomerService.xsd_1.xsd"/>
+</catalog>
